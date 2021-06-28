@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<!--Author: victor robles
+    email: vicroble@uat.edu
+Wk1 assignment, Launching your UAT Space Program HTML Document-->
+<html>
+  <head>
+    <script src="code.js"></script>
+    <script src="class.js"></script>
+    <script src="dataLoader.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Mr.victor UATspace Page</title>
+    <script>
+      //after week 1, we are getting rid of the alert.
+      //alert("this is a test of the alert function")
+    </script>
+  </head>
+
+  <body>
+    <table>
+      <td><img src="UATspaceLogo-1.jpg" /></td>
+      <td><h1>UAT Space program</h1></td>
+    </table>
+
+    <br/>
+    <br>
+<table id = "data" width = "70%" border="2">
+ <col style = "width: 35%"
+<thead>
+  <tr>style="font-Family: fantasy</tr>
+  <th>Data Type</th>
+  <th>Reading</th>
+</thead>
+<tbody>
+<tr id="seconds"></tr>
+<tr id ="latitude"></tr>
+<tr id = "longetude"></tr>
+<tr id = "gpsSensor_alt"></tr>
+<tr id = "bmpSensor_alt"></tr>
+<tr id = "bmpSensor_pres"></tr>
+<tr id = "bmpSensor_temp"></tr>
+<tr id = "digSensor_temp"></tr>
+<tr id = "cssSensor_eCO2"></tr>
+<tr id = "cssSensor_TVOL"></tr>
+<tr id = "UV"></tr>
+<tr id = "acceIX"></tr>
+<tr id = "acceIX"></tr>
+<tr id = "acceIX"></tr>
+<tr id = "magneticX"></tr>
+<tr id = "magneticY"></tr>
+<tr id = "magneticZ"></tr>
+<tr id = "gyroX"></tr>
+<tr id = "gyroY"></tr>
+<tr id = "gyroZ"></tr>
+
+</tbody>
+</table>
+<br/>
+
+
+    <br />
+    <button id= "startButton" onclick="start();" class="button">Start</button>
+    <button id= "stopButton" onclick ="stop()" class="button">stop</button>
+    <br />
+    <br />
+    <div id="die1Res">Die 1 status</div>
+    <div id="die2Res">Die 2 status</div>
+    <div id="diceSum">Die Sum Status</div>
+    <div id="crapsStatus">craps game Status</div>
+    <button onclick="playCraps()" class="button">Play Craps</button>
+
+    <br />
+    <br />
+
+   <script>
+     var fallLaunch = new Mission(100, 100, 100, "Fiona", 15, "October", 2022, 5);
+     var springLaunch = new Mission(79, 50, 92, "Polarius", 12, "April", 2023, 2);
+   </script>
+
+   <button class = "button" onclick= "launchFall();">launch fall</button>
+   <button class = "button" onclick= "displayFall();">display fall</button>
+
+  </body>
+</html>
